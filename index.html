@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> </title>
+  <meta charset="UTF-8">
+  <link rel="resetsheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-database.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+  <div class="container main-head">
+    <h1 class="text-center display-3">Anytime is Train Time</h1>
+    <h4 class="text-center display-5">Choo Choo. Chee Chee</h4>
+  </div>
+  <div class="container" id="trainSchedule">
+    <h6 class="schedulehead">Current Train Schedule</h6>
+    <div class="train-group"></div>
+  </div>
+  <div class="container" id="addTrain">
+    <h6 class="addtrainhead">Add Train</h6>
+    <form>
+      <div class="form-group trainForm">
+        <label for="trainName">Train Name</label>
+          <input type="text" class="form-control" id="trainName" placeholder="">
+        <label for="destination">Destination</label>
+          <input type="text" class="form-control" id="destination" placeholder="">
+        <label for="traintime">First Train Time (HH:mm - military time)</label>
+          <input type="text" class="form-control" id="traintime" placeholder="">
+        <label for="frequency">Destination</label>
+          <input type="text" class="form-control" id="frequency" placeholder="">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+    
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
+</body>
+</html>

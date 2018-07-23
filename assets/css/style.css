@@ -1,0 +1,34 @@
+.main-head {
+    background-color: brown;
+    color: white;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.addtrainhead, .schedulehead {
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+    width: 100%
+}
+
+#trainSchedule, #addTrain {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: royalblue;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+.trainForm, .train-group {
+    margin: auto 15px 20px;
+}
+
+.form-control {
+    margin-bottom: 20px; 
+}
+
+label {
+    font-weight: bold;
+}
