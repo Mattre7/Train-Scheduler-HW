@@ -32,3 +32,12 @@
 label {
     font-weight: bold;
 }
+
+.columns {
+    border-style: solid;
+    border-width: 0px 0px 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: lightgray
+}
+
