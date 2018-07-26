@@ -16,23 +16,22 @@ database.ref().on("child_added", function(childSnapshot) {
     var trainTime = childSnapshot.val().trainTime;
     var frequency = childSnapshot.val().frequency;
 
-    console.log(moment(trainTime).isValid());
+    console.log(moment(trainTime, "hh:mm").isValid());
     console.log(trainTime);
     console.log(moment.unix(trainTime));
+    console.log(moment(frequency, "minutes").isValid());
 
-    var timeDiff = moment().diff(moment.unix(trainTime), "minutes");
-    var timeRemainder = moment().diff(moment.unix(trainTime), "minutes") % frequency;
+    var timeDiff = moment().diff(moment(trainTime, "hh:mm"), "minutes");
+    var timeRemainder = moment().diff(timeDiff, "minutes") % frequency;
     var minutes = frequency - timeRemainder;
     var nexttrain = moment().add(minutes, "m").format("hh:mm A");
 
     console.log(timeDiff);
     console.log(frequency);
     console.log(timeRemainder);
-
     console.log(minutes)
     console.log(nexttrain)
     console.log(moment().format('hh:mm A'));
-    console.log(nexttrain);
     console.log(moment().format('X'))
 
     var newTraindiv = $("<div class='row newtraindiv'>")
